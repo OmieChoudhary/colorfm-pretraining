@@ -27,3 +27,7 @@ proprietary_data/
 # IDE
 .vscode/
 .idea/
+
+# Ignore generated result artifacts by default
+results/
+!results/.gitkeep
