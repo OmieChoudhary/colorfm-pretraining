@@ -1,9 +1,29 @@
+# Python
 .venv/
 __pycache__/
 *.pyc
 .pytest_cache/
 .DS_Store
+.ipynb_checkpoints/
+
+# Raw training outputs
 results/runs/
-results/figures/*.png
-results/tables/*.csv
-results/tables/*.json
+results/checkpoints/
+*.pt
+*.pth
+*.ckpt
+
+# Experiment tracking
+wandb/
+mlruns/
+
+# Private / large data
+private_data/
+proprietary_data/
+*.zip
+*.tar
+*.tar.gz
+
+# IDE
+.vscode/
+.idea/
