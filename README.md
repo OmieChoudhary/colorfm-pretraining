@@ -115,7 +115,3 @@ This is not a claim of frontier-scale LLM training. It is a clean public artifac
 - failure analysis and next-experiment planning
 
 That is the bridge from industrial color AI experience to foundation-model pretraining research.
-
-## Suggested resume framing
-
-> Built ColorFM, a public research prototype for domain-specific foundation model pretraining on color and spectral reflectance data, including masked spectral modeling, Lab/DeltaE evaluation, objective ablations, scaling configs, metric logging, and failure analysis.
