@@ -1,6 +1,10 @@
-# FoundationPretrainauxiliary target: Foundation Model Pretraining Research Systems
+# FoundationPretrainLab: Foundation Model Pretraining Research Systems
 
-FoundationPretrainauxiliary target is a compact, reproducible research repo that demonstrates a **full pretraining research loop** on a foundation-model research problem: studying masked modeling, training configurations, evaluation harnesses, scaling studies, metric logging, and failure analysis.
+FoundationPretrainLab is a compact, reproducible research repo for studying foundation model pretraining loops at a tractable scale.
+
+The project focuses on data construction, masked modeling, training configurations, objective ablations, evaluation harnesses, scaling studies, metric logging, and failure analysis.
+
+The goal is not to claim frontier-scale training. The goal is to demonstrate the research discipline behind pretraining systems: define the data, choose the objective, train a baseline, evaluate transfer, diagnose failures, and iterate.
 
 The repo is intentionally small enough to run on a laptop, but it mirrors the workflow expected in real pretraining research:
 
