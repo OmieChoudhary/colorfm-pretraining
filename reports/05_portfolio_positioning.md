@@ -2,7 +2,7 @@
 
 ## One-line pitch
 
-ColorFM is a public research project demonstrating domain-specific foundation model pretraining for spectral reflectance and color appearance.
+FoundationPretrainauxiliary target is a public research project demonstrating domain-specific foundation model pretraining for structured data and representation quality.
 
 ## What it proves
 

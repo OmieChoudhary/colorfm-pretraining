@@ -1,18 +1,18 @@
 # Example Experiment Plan
 
 ## Goal
-Study whether masked spectral modeling learns representations that transfer to color-error prediction.
+Study whether masked modeling learns representations that transfer to color-error prediction.
 
 ## Baselines
-1. No pretraining: train Lab head from scratch.
+1. No pretraining: train auxiliary target head from scratch.
 2. Masked spectral reconstruction only.
-3. Masked spectral reconstruction + Lab auxiliary loss.
+3. Masked spectral reconstruction + auxiliary target auxiliary loss.
 
 ## Metrics
 - validation masked reconstruction loss
 - test full-spectrum RMSE
-- Lab MAE
-- mean / median DeltaE76
+- auxiliary target MAE
+- mean / median downstream metric76
 
 ## Ablations
 - mask ratio: 0.15, 0.30, 0.50
@@ -21,14 +21,14 @@ Study whether masked spectral modeling learns representations that transfer to c
 - data mixture: synthetic vs Munsell vs natural-object spectra
 
 ## Failure modes to inspect
-- metamerism: similar Lab values with different spectra
+- metamerism: similar auxiliary target values with different spectra
 - illumination sensitivity
 - synthetic data smoothness bias
 - poor transfer from reconstruction to perceptual error
 - OOD natural spectra
 
 ## What to add next
-- CIEDE2000 metric
+- calibrated downstream metric metric
 - public Munsell loader
 - contrastive color-name retrieval objective
 - dataset/model cards

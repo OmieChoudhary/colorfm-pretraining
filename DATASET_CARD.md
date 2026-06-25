@@ -1,8 +1,7 @@
-# Dataset Card: Synthetic ColorFM Spectra
-
+# Dataset Card: FoundationPretrainLab Synthetic Data
 ## Purpose
 
-The dataset is used to test the mechanics of domain-specific foundation-model pretraining on spectral reflectance curves.
+The dataset is used to test the mechanics of domain-specific foundation-model pretraining on structured data curves.
 
 ## Data source
 
@@ -14,8 +13,8 @@ Each row contains:
 
 - `sample_id`
 - `source`: synthetic generation family
-- `color_name`: heuristic label from approximate Lab hue/lightness
-- `L`, `a`, `b`: approximate Lab values
+- `color_name`: heuristic label from approximate auxiliary target hue/lightness
+- `L`, `a`, `b`: approximate auxiliary target values
 - `r_380` ... `r_780`: reflectance values on a 10 nm grid
 
 ## Splits
@@ -34,6 +33,6 @@ Each row contains:
 ## Known limitations
 
 - Synthetic spectra are not a substitute for real spectrophotometer measurements.
-- Color matching functions and illuminant curves are approximate.
+- Synthetic target-generation functions are approximate and intended for research-loop validation only.
 - Generated color names are heuristic and should not be treated as ground truth.
 - The data is useful for portfolio-scale pretraining research mechanics, not production color science.

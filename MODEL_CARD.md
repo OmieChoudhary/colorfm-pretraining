@@ -1,8 +1,8 @@
-# Model Card: SpectralTransformer
+# Model Card: FoundationPretrainLab Baseline
 
 ## Model
 
-A small transformer encoder for masked spectral modeling.
+A small transformer encoder for masked modeling.
 
 Input:
 
@@ -11,13 +11,13 @@ Input:
 Outputs:
 
 - Reconstructed reflectance spectrum
-- Predicted Lab vector
+- Predicted auxiliary target vector
 - Pooled embedding for retrieval/evaluation
 
 ## Objectives
 
 - Masked spectral reconstruction
-- Optional Lab auxiliary loss
+- Optional auxiliary target auxiliary loss
 - Optional spectral smoothness regularization
 
 ## Intended use
@@ -33,8 +33,8 @@ This model is for research-loop demonstration: ablations, scaling sweeps, and ev
 ## Evaluation metrics
 
 - Full-spectrum RMSE and MAE
-- DeltaE76 and CIEDE2000 between predicted and approximate target Lab
-- Color-name retrieval Recall@K
+- downstream metric76 and calibrated downstream metric between predicted and approximate target auxiliary target
+- Embedding retrieval Recall@K
 - Validation loss and objective-specific losses
 
 ## Limitations

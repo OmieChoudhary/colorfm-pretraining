@@ -25,9 +25,9 @@ Keep validation/test fixed for comparisons.
 - train loss
 - validation loss
 - validation reconstruction loss
-- validation Lab loss
+- validation auxiliary target loss
 - test spectrum RMSE
-- test mean CIEDE2000
+- test mean calibrated downstream metric
 - color-name Recall@1 and Recall@5
 - samples/sec
 - parameter count
@@ -35,6 +35,6 @@ Keep validation/test fixed for comparisons.
 ## Plots
 
 - validation loss vs parameters
-- CIEDE2000 vs parameters
+- calibrated downstream metric vs parameters
 - reconstruction RMSE vs parameters
 - samples/sec vs parameters

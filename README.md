@@ -1,6 +1,6 @@
-# ColorFM: Domain-Specific Foundation Model Pretraining for Color and Spectral Appearance
+# FoundationPretrainauxiliary target: Foundation Model Pretraining Research Systems
 
-ColorFM is a compact, reproducible research repo that demonstrates a **full pretraining research loop** on a domain-specific foundation-model problem: learning reusable representations of spectral reflectance and color appearance.
+FoundationPretrainauxiliary target is a compact, reproducible research repo that demonstrates a **full pretraining research loop** on a foundation-model research problem: studying masked modeling, training configurations, evaluation harnesses, scaling studies, metric logging, and failure analysis.
 
 The repo is intentionally small enough to run on a laptop, but it mirrors the workflow expected in real pretraining research:
 
@@ -17,7 +17,7 @@ No PPG data is used. The project is inspired by industrial color modeling, but a
 
 ## Research question
 
-Can masked spectral modeling learn reusable color representations that transfer to perceptual color metrics such as Lab error, DeltaE, color-name retrieval, and robustness-style evaluations?
+Can masked modeling learn reusable color representations that transfer to perceptual color metrics such as auxiliary target error, downstream metric, color-name retrieval, and robustness-style evaluations?
 
 ## Repo structure
 
@@ -26,9 +26,9 @@ colorfm_pretraining_demo/
   data/                         # synthetic train/val/test generation
   colorfm/
     models/                     # spectral transformer
-    objectives/                 # reconstruction, Lab, smoothness losses
+    objectives/                 # reconstruction, auxiliary target, smoothness losses
     train/                      # pretraining loop with JSONL metrics
-    eval/                       # reconstruction, DeltaE, retrieval, all-in-one evals
+    eval/                       # reconstruction, downstream metric, retrieval, all-in-one evals
     experiments/                # sweep runner and result summarizer
     analysis/                   # plotting utilities
   configs/                      # baseline, objective ablations, scaling configs
