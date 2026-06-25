@@ -1,0 +1,13 @@
+name: quick_research_loop
+base_config: configs/base_pretrain.yaml
+experiments:
+  - name: smoke_small
+    config: configs/pretrain_small.yaml
+  - name: objective_mlm_only
+    config: configs/objective_mlm_only.yaml
+  - name: objective_deltae_aux
+    config: configs/objective_deltae_aux.yaml
+  - name: scaling_tiny
+    config: configs/scaling_tiny.yaml
+  - name: scaling_small
+    config: configs/scaling_small.yaml

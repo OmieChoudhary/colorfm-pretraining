@@ -1,0 +1,28 @@
+run_name: scaling_tiny
+seed: 42
+overwrite: true
+train_csv: data/train.csv
+val_csv: data/val.csv
+test_csv: data/test.csv
+output_root: results/runs
+model:
+  d_model: 16
+  n_heads: 4
+  n_layers: 1
+  dim_feedforward: 32
+  dropout: 0.1
+objectives:
+  reconstruction_weight: 1.0
+  lab_weight: 0.05
+  smoothness_weight: 0.001
+training:
+  epochs: 2
+  batch_size: 64
+  lr: 0.0007
+  min_lr: 0.000001
+  weight_decay: 0.01
+  mask_ratio: 0.30
+  grad_clip: 1.0
+  num_workers: 0
+  device: auto
+  torch_num_threads: 1
